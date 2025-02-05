@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Form Builder</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking external CSS -->
+</head>
+<body>
+    <button id="logoutButton">Logout</button>
+    <div class="container" id="authSection">
+        <h2 id="formTitle">Login</h2>
+        <form id="authForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p class="toggle">Don't have an account? Register</p>
+    </div>
+
+    <div id="formSection">
+        <h1>Dynamic Form Builder</h1>
+        <div class="input-group">
+            <select id="inputType">
+                <option value="text">Text Input</option>
+                <option value="email">Email Input</option>
+                <option value="number">Number Input</option>
+                <option value="password">Password Input</option>
+                <option value="date">Date Input</option>
+                <option value="textarea">Text Area</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="radio">Radio Button</option>
+            </select>
+            <button id="addField">Add Input Field</button>
+        </div>
+
+        <form id="dynamicForm">
+            <div id="formContainer"></div>
+            <button type="button" id="submitForm">Submit Form</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking external JavaScript -->
+</body>
+</html>
